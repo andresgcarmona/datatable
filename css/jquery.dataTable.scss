@@ -1,0 +1,115 @@
+@CHARSET "UTF-16";
+
+$linkHoverColor: #308EDC;
+
+.dtableWrapper{
+	.searchWrapper{
+		float: left;
+    width: 99%;
+    background: #F9F9F9;
+    padding: 0.5%;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+		form{
+			width: 100%;
+			input[type="text"]{
+				float: left;
+				width: 30%;
+				margin-right: 5px;
+			}
+			input[type="submit"]{
+				float: left;
+				padding: 5px 20px;
+			}
+			select{
+				width: 20%;
+				float: right;
+			}
+		}	
+	}
+	table{
+	  width: 100%;
+		tr{
+			border: 1px solid #CCC;
+			border-width: 0 1px 1px 1px;
+			th, td{
+			  border: 1px solid #CCC;
+  	  }
+  	  &.odd{
+        background-color: #82b4b5;
+      }
+      &.even{
+        background-color: #EEE;
+      }
+		}
+		thead{
+		  th{
+        background: #F9F9F9;
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        &.orderBy.asc:after{
+          content: '';
+          background-image: url(/images/sprite.png);
+          background-repeat: no-repeat;
+          background-position: 0 -16px;
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          float: right;
+          margin-top: -8px;
+        }
+        &.orderBy.desc:after{
+          content: '';
+          background-image: url(/images/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -64px -16px;
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          float: right;
+          margin-top: -8px;
+        }
+      }
+		}
+		tfoot{
+		  td{
+		    background: #F9F9F9;
+        padding: 9px;
+        > div{
+          float: left;
+          width: 100%;
+          text-align: left;
+          background: #F9F9F9;
+          > span{
+            float: left;
+          }
+        }
+		  }
+		  .pageButtons{
+		    float: right;
+		    width: auto;
+		    input[type="button"]{
+		      float: left;
+		      display: block;
+		      margin-left: 8px;
+		    }
+		  }
+		  #numResults{
+		    float: left;
+		    width: 66%;
+		    select{
+		      width: auto;
+          float: left;
+		    }
+		    span{
+		      display: block;
+          float: left;
+          width: auto;
+          padding: 13px;
+		    }
+		  }
+		}
+	}
+}

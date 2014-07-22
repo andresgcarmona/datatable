@@ -1,0 +1,85 @@
+@CHARSET "UTF-16";
+.dtableWrapper .searchWrapper {
+  float: left;
+  width: 99%;
+  background: #F9F9F9;
+  padding: 0.5%;
+  border: 1px solid #ccc;
+  border-bottom: 0; }
+  .dtableWrapper .searchWrapper form {
+    width: 100%; }
+    .dtableWrapper .searchWrapper form input[type="text"] {
+      float: left;
+      width: 30%;
+      margin-right: 5px; }
+    .dtableWrapper .searchWrapper form input[type="submit"] {
+      float: left;
+      padding: 5px 20px; }
+    .dtableWrapper .searchWrapper form select {
+      width: 20%;
+      float: right; }
+.dtableWrapper table {
+  width: 100%; }
+  .dtableWrapper table tr {
+    border: 1px solid #CCC;
+    border-width: 0 1px 1px 1px; }
+    .dtableWrapper table tr th, .dtableWrapper table tr td {
+      border: 1px solid #CCC; }
+    .dtableWrapper table tr.odd {
+      background-color: #82b4b5; }
+    .dtableWrapper table tr.even {
+      background-color: #EEE; }
+  .dtableWrapper table thead th {
+    background: #F9F9F9;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer; }
+    .dtableWrapper table thead th.orderBy.asc:after {
+      content: '';
+      background-image: url(/images/sprite.png);
+      background-repeat: no-repeat;
+      background-position: 0 -16px;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      float: right;
+      margin-top: -8px; }
+    .dtableWrapper table thead th.orderBy.desc:after {
+      content: '';
+      background-image: url(/images/sprite.png);
+      background-repeat: no-repeat;
+      background-position: -64px -16px;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      float: right;
+      margin-top: -8px; }
+  .dtableWrapper table tfoot td {
+    background: #F9F9F9;
+    padding: 9px; }
+    .dtableWrapper table tfoot td > div {
+      float: left;
+      width: 100%;
+      text-align: left;
+      background: #F9F9F9; }
+      .dtableWrapper table tfoot td > div > span {
+        float: left; }
+  .dtableWrapper table tfoot .pageButtons {
+    float: right;
+    width: auto; }
+    .dtableWrapper table tfoot .pageButtons input[type="button"] {
+      float: left;
+      display: block;
+      margin-left: 8px; }
+  .dtableWrapper table tfoot #numResults {
+    float: left;
+    width: 66%; }
+    .dtableWrapper table tfoot #numResults select {
+      width: auto;
+      float: left; }
+    .dtableWrapper table tfoot #numResults span {
+      display: block;
+      float: left;
+      width: auto;
+      padding: 13px; }
